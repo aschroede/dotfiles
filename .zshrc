@@ -17,12 +17,10 @@ fi
 ZSH_THEME="powerlevel10k/powerlevel10k"
 ZSH_THEME_RIGHT_PROMPT_ELEMENTS=(status virtualenv)
 
-# export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
-# export WORKON_HOME=~/.virtualenvs
-# source /home/andrew/.local/bin/virtualenvwrapper.sh
-
-
-
+# Load machine-specific config if it exists
+if [[ -f ~/.zshrc.local ]]; then
+    source ~/.zshrc.local
+fi
 
 # Set list of themes to load
 # Setting this variable when ZSH_THEME=random
@@ -132,5 +130,7 @@ alias fix-bt="systemctl --user restart pipewire pipewire-pulse"
 
 # Dotfiles repository
 alias dotfiles="/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME"
+
+
 
 

@@ -77,8 +77,6 @@ plugins=(
   git
   zsh-syntax-highlighting
   zsh-autosuggestions
-  virtualenv
-  virtualenvwrapper
 )
 
 source $ZSH/oh-my-zsh.sh

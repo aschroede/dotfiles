@@ -2,4 +2,5 @@
 !.gitignore
 !.zshrc
 !.vimrc
+!.p10k.zsh
 !.gitconfig
